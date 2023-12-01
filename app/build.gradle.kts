@@ -2,7 +2,11 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    kotlin("kapt") version "1.9.21"
+    id("com.google.dagger.hilt.android") version "2.44" apply false
+
 }
+
 
 android {
     namespace = "com.example.qazspotting"
@@ -51,8 +55,11 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.core.ktx)
+    implementation("androidx.datastore:datastore-preferences-rxjava3:1.0.0")
+    implementation("com.google.dagger:hilt-android:2.44")
+    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
+    implementation("androidx.hilt:hilt-work:1.0.0")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
@@ -67,7 +74,12 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+    kapt("groupId:artifactId:version")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
+
 }
+
+
 
 dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")

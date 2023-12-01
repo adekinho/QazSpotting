@@ -13,21 +13,21 @@ data class Page(
 
 val pages = listOf(
     Page(
+        title = "Qazaqstandyq ushaqtar",
+        description = "Barlyq qazaqstandyq aue kompaialardyn ushaqtarynyn aqparatyn biletin qosymsha",
+        image = R.drawable.qazaq_air_onboarding_img1,
+        contentDescription = "Pre app page"
+    ),
+    Page(
         title = "Надо добавить позже",
-        description = "Надо добавить позже",
-        image = R.drawable.beach_image,
+        description = "Barlyq qazaqstandyq aue kompaialardyn ushaqtarynyn aqparatyn biletin qosymsha",
+        image = R.drawable.qazaq_air_onboarding_img1,
         contentDescription = "Pre app page"
     ),
     Page(
         title = "Надо добавить позже",
         description = "Надо добавить позже",
-        image = R.drawable.beach_image,
-        contentDescription = "Pre app page"
-    ),
-    Page(
-        title = "Надо добавить позже",
-        description = "Надо добавить позже",
-        image = R.drawable.beach_image,
+        image = R.drawable.qazaq_air_onboarding_img1,
         contentDescription = "Pre app page"
     )
 )
